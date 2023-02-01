@@ -1,10 +1,13 @@
 const path = require('path')
 
 module.exports = {
-    mode: "development",
-    entry: './src/index.js',
+    entry: './src/index.js',//вхідний фвйл
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'my-bundle.js'
-    }
+        path: path.resolve(__dirname, 'build'),//вихідна папка
+        filename: 'bundle.js'//назва готового файлу у вихідній папці
+    }, 
+    devServer: {
+        port: 4000,//кастомний порт
+        open: true,//автоматично відкриває вкладку браузеру
+        }
 }

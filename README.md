@@ -14,3 +14,6 @@
 in package.json change scripts:
                                 "dev": "webpack --mode=development,
                                 "prod": "webpack --mode=production"
+
+підключення server -> npm install webpack-dev-server --save-dev / 
+в scripts ставимо "dev": "webpack-dev-server --mode=development"
